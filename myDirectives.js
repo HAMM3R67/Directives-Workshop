@@ -1,11 +1,11 @@
-var app = angular.module('directiveWorkshop', []);
+var app = angular.module('myDirectives', []);
 
 app.directive('pending', function(){
 	return {
 		restrict: 'AE',
 		scope: '&',
-		link: function(scope, element, attr){
-			console.log(scope, element, attr)
+		link: function(scope, elem, attrs){
+			console.log(scope, elem, attrs)
 		}
 	}
 })

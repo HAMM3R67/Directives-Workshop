@@ -3,8 +3,8 @@
 <head>
 	<title>My Directives</title>
 </head>
-<body ng-controller="mainCtrl">
-
+<body>
+<div ng-controller="mainCtrl">
 <div>
 <h2>pending</h2>
 	<form>
@@ -19,17 +19,18 @@
 		<input ng-model="title" placeholder="title"/>
 		<input ng-model="body" placeholder="body"/>
 		<input ng-model="icon" placeholder="iconUrl"/>
-		<button ng-click="">Submit</button> 
+		<button >Submit</button> 
 	</form>
 </div>
+</div>
 
-<scripts>
+
 	<script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
-	<script type="text/javascript" src="bower_components/angular/angular.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.16/angular.min.js"></script>
 	<script type="text/javascript" src="mainCtrl.js"></script>
 	<script type="text/javascript" src="mainService.js"></script>
 	<script type="text/javascript" src="myDirectives.js"></script>
-</scripts>
+
 
 </body>
 </html>
