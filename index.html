@@ -9,7 +9,7 @@
 <h2>pending</h2>
 	<form>
 		<input ng-model="query" placeholder="Search"/>
-		<button pending request="getData()">Submit</button> 
+		<button ng-click="toggle()" ng-show="isVisible" pending request="getData()">Submit</button> 
 	</form>
 </div>
 
@@ -19,7 +19,7 @@
 		<input ng-model="title" placeholder="title"/>
 		<input ng-model="body" placeholder="body"/>
 		<input ng-model="icon" placeholder="iconUrl"/>
-		<button >Submit</button> 
+		<button>Submit</button> 
 	</form>
 </div>
 </div>
